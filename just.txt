@@ -1,0 +1,27 @@
+// Define a function to calculate the factorial of a number
+def factorial(n) {
+    if (n == 0) {
+        return 1
+    } else {
+        return n * factorial(n - 1)
+    }
+}
+
+// Calculate and print the factorial of 5
+def result = factorial (5
+println("Factorial of 5 is: $result")
+
+// Define a list of colors
+def colors = ['red', 'green', 'blue']
+
+
+
+// Access and print details of the person
+println("Person:")
+println("Name: ${person.name}")
+println("Age: ${person.age}")
+println("City: ${person.city}")
+
+endCode
+
+

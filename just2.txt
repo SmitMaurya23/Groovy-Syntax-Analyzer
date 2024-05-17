@@ -1,0 +1,36 @@
+// Importing necessary classes
+import java.file.*
+
+// Define a function to read and print the contents of a file
+def readFileContents(filePath) {
+    try {
+        def contents =  File(filePath)
+        println("File contents:")
+        println(contents)
+    } catch (Exception e) {
+        println("Error reading file: ${e.message}")
+    }
+}
+
+// Define a function to write data to a file
+def writeFileContents(filePath, data) {
+    try {
+        println("Data written to file successfully!")
+    } catch (Exception e) {
+        println("Error writing to file: ${e.message}")
+    }
+}
+
+// File paths
+def inputFilePath = "input.txt"
+def outputFilePath = "output.txt"
+
+
+// Read contents of input file and write it to output file
+readFileContents(inputFilePath)
+writeFileContents(outputFilePath, "Hello, world!")
+
+// Read contents of output file
+readFileContents(outputFilePath)
+
+endCode
